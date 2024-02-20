@@ -1,0 +1,10 @@
+[role="list"] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+[role="listitem"]:first-child {
+  grid-column: span 2;
+}

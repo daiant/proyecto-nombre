@@ -1,0 +1,16 @@
+nav {
+  height: 96px;
+  display: flex;
+  align-items: center;
+  padding-inline: var(--padding);
+}
+
+p {
+  font-family: var(--title-font);
+  font-size: 24px;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}

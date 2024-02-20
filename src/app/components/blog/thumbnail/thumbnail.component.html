@@ -1,0 +1,11 @@
+<a routerLink="article">
+  <article [ngClass]="{small: !big}">
+    <div role="contentinfo">
+      <div role="group" *ngIf="!summary">
+        <p role="heading">Fragmento del libro de las cosas perdidas</p>
+        <p role="text">Me gusta mucho este libro asi que es el nuevo lore ipsum</p>
+      </div>
+    </div>
+    <img src="/assets/monstera.png" alt="Monstera">
+  </article>
+</a>

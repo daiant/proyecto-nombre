@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+@font-face {
+  font-family: 'Commit Mono';
+  src: url('./assets/fonts/CommitMono.otf') format("opentype");
+}
+
+body {
+  --padding: 32px;
+  --padding-s: 16px;
+  --border-radius: calc(var(--padding) / 2);
+  --title-font: "Space Grotesk", sans-serif;
+  --body-font: 'Commit Mono', monospace;
+  --size-h1: 36px;
+  --size-h2: 32px;
+  --size-h3: 24px;
+  --size-subheading: 20px;
+  --size-text: 18px;
+  --size-text-s: 16px;
+  --ease: cubic-bezier(0.8, 0, 1, 1);
+
+  margin: 0;
+  color: hsl(0, 0%, 94%);
+  background-color: hsl(0, 0%, 11%);
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+  background: #00d360;
+}
+
+::selection {
+  color: black;
+  background: #00d360;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
