@@ -1,0 +1,17 @@
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  row-gap: 16px;
+  padding: var(--padding);
+  min-height: 300px;
+  overflow: hidden;
+}
+
+p {
+  font-family: var(--body-font);
+  font-size: var(--size-text-s);
+  margin-block: 0;
+}
