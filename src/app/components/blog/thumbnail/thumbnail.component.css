@@ -3,12 +3,14 @@
   position: relative;
   padding: 16px;
   overflow: hidden;
-  cursor: pointer;
   color: unset;
   text-decoration: none;
+  cursor: default;
   container: article / inline-size;
 
-  &:hover {
+  &:not(.summary):hover {
+    cursor: pointer;
+
     [role="heading"] {
       text-decoration: underline;
     }
@@ -38,7 +40,7 @@
   height: 100%;
 
   & [role="group"] {
-    max-width: 80cqw;
+    max-width: 80cqi;
     transition: height 200ms var(--ease);
 
     &>* {
@@ -66,7 +68,7 @@
 
 img {
   position: absolute;
-  width: 60cqw;
+  width: 60cqi;
   bottom: 0;
   transition: transform 2s normal;
   transform-origin: bottom left;
@@ -87,7 +89,7 @@ img {
   }
 
   img {
-    width: 90cqw;
+    width: 90cqi;
     left: -10cqi;
   }
 

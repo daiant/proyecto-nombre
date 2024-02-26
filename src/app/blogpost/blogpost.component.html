@@ -1,58 +1,24 @@
-<main>
-
-  <h1>Fragmento del libro de las cosas perdidas</h1>
-  <article>
+<main *ngIf="heading">
+  <header>
+    <h1>{{heading.title}}</h1>
+    <h2>{{heading.subtitle}}</h2>
     <app-thumbnail [big]="true" [summary]="true"></app-thumbnail>
-    <p>Érase una vez, porque así es como deberían empezar todas las historias, un niño que perdió a su madre. En
-      realidad,
-      llevaba ya mucho tiempo perdiéndola, puesto que la enfermedad que la estaba matando era un enemigo sigiloso y
-      cobarde
-      que
-      se la comía por dentro, que consumía lentamente su luz interior, de modo que perdía el brillo de los ojos con cada
-      día
-      que pasaba y tenía la piel cada vez más pálida. A medida que la enfermedad se la iba robando poco a poco, el miedo
-      del
-      niño a perderla del todo crecía en consonancia.
-    </p>
-    <p>
-
-      Quería que se quedara. No tenía hermanos ni hermanas y, aunque amaba a su padre, sería justo reconocer que amaba
-      más
-      a
-      su madre y que no soportaba la idea de vivir sin ella. El niño, que se llamaba David, hizo todo lo que pudo por
-      mantenerla viva. Rezó. Intentó ser bueno, para que ella no tuviera que ser castigada por los errores que cometía
-      él.
-      Caminaba de puntillas por la casa procurando no hacer ruido, y bajaba la voz cuando jugaba a la guerra con sus
-      soldaditos de plomo.
-    </p>
-    <p>
-      Se inventó una rutina e intentó ceñirse a ella todo lo posible, porque, en parte, creía que el destino de su madre
-      estaba unido a las acciones que él realizaba. Siempre se levantaba de la cama poniendo primero el pie izquierdo en
-      el
-      suelo y después el derecho. Siempre contaba hasta veinte cuando se cepillaba los dientes y siempre paraba al
-      terminar
-      la
-      cuenta. Siempre tocaba los grifos del cuarto de baño y los pomos de las puertas un número concreto de veces: los
-      números
-      impares eran malos, pero los pares estaban bien; dos, cuatro y ocho eran los mejores, aunque no le gustaba el
-      seis,
-      porque el seis era dos veces tres, tres era la segunda parte de trece, y trece era un número realmente malo.</p>
-
-    <h2>Publicado el 20 de febrero de 2024</h2>
-    <div class="tags">
-      <p>#xaxi</p>
-      <p>#libros</p>
-    </div>
+  </header>
+  <article markdown [data]="article">
   </article>
   <nav>
     <div role="group">
       <p role="heading">Tabla de contenidos</p>
       <div role="list">
-        <p role="listitem">Un pito</p>
-        <p role="listitem">Dos pito</p>
-        <p role="listitem">Tres pito</p>
-        <p role="listitem">Cinto pito</p>
+        <p role="listitem" *ngFor="let item of getHeadings()" (click)="handleScrollIntoView(item)">{{item.innerText}}
+        </p>
       </div>
     </div>
   </nav>
+  <footer>
+    <h2>Publicado el {{getDate()}}</h2>
+    <div class="tags">
+      <p *ngFor="let tag of heading?.tags">#{{tag}}</p>
+    </div>
+  </footer>
 </main>
