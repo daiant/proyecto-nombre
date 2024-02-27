@@ -22,13 +22,13 @@
 
   &.small {
     [role=contentinfo] {
-      aspect-ratio: 437 / 400;
+      aspect-ratio: 400 / 300;
     }
   }
 }
 
 [role="contentinfo"] {
-  aspect-ratio: 900 / 400;
+  aspect-ratio: 728 / 300;
   border: 2px solid;
   border-radius: var(--border-radius);
   padding: var(--padding-s);
@@ -77,7 +77,7 @@ img {
 
 @container article (max-width: 728px) {
   [role=contentinfo] {
-    aspect-ratio: 437 / 400;
+    aspect-ratio: 400 / 300;
 
     [role=heading] {
       font-size: var(--size-h3);

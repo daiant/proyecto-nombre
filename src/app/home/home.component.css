@@ -7,10 +7,9 @@
 
 [role="listitem"] {
   flex: 1;
-  flex-basis: 437px;
+  flex-basis: 400px;
 }
 
 [role="listitem"]:first-child {
-  grid-column: span 2;
-  flex-basis: 900px;
+  flex-basis: 728px;
 }
