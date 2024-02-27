@@ -24,9 +24,8 @@ jobs:
       run: npm run build
     
     - name: Deploy to gh pages
-      if: success()
-      uses: peaceiris/actions-gh-pages@v3
-      with: 
-        github_token: ${{ secrets.GH_TOKEN }}
-        publish_dir: dist/proyecto-nombre
-        enable_jekyll: true
+      run : |
+        npx angular-cli-ghpages --dir=dist/proyecto-nombre --no-silent
+      env:
+        CI: true
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
