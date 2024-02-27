@@ -16,7 +16,7 @@ export class HomeComponent {
   loading: boolean = true;
   posts: MarkdownHeading[] = new Array(0);
   constructor() {
-    fetch('/assets/posts/posts.json').then(response => response.json()).then(data => {
+    fetch('assets/posts/posts.json').then(response => response.json()).then(data => {
       this.loading = false;
       this.posts = data.posts;
     });

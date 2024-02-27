@@ -1,4 +1,4 @@
-<a [routerLink]="url" role="article" [ngClass]="{small: !big, summary}">
+<a [routerLink]="url ? url : []" role="article" [ngClass]="{small: !big, summary}">
   <div role="contentinfo">
     <div role="group" *ngIf="!summary">
       <p role="heading">{{title}}</p>

@@ -71,7 +71,7 @@ p,
 li {
   font-family: var(--body-font);
   font-size: var(--size-text-s);
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
 h1 {
@@ -141,7 +141,12 @@ pre {
   }
 
   header app-thumbnail,
-  article {
+  article,
+  footer {
     grid-column: 1 / -1;
+  }
+
+  footer {
+    padding-inline: var(--padding);
   }
 }

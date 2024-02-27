@@ -22,7 +22,7 @@ export class BlogpostComponent {
   constructor() {
     const id = this.route.snapshot.params['article'];
     console.log(this.route.snapshot.params['article']);
-    fetch('/assets/posts/' + id + '.md')
+    fetch('assets/posts/' + id + '.md')
       .then(response => response.ok ? response.text() : undefined)
       .then(data => this.parseData(data))
       .catch(error => { console.warn(error); this.loading = false });
@@ -45,6 +45,6 @@ export class BlogpostComponent {
     return new Intl.DateTimeFormat('es', { dateStyle: 'full' }).format(new Date(this.heading?.date ?? new Date()))
   }
   handleScrollIntoView(h: HTMLHeadingElement) {
-    h.scrollIntoView({ behavior: 'smooth' })
+    h.scrollIntoView({ behavior: 'smooth' });
   }
 }
