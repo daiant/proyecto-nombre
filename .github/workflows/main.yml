@@ -5,30 +5,25 @@ on:
     branches:
       - main
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
+    - name: Checkout Repo
       uses: actions/checkout@v2
 
-    - name: Use Node.js 20.x
-      uses: actions/setup-node@v1
+    - name: Add Node.js 20
+      uses: actions/setup-node@v2
       with:
-        node-version: 20.x
+        node-version: 20
 
-    - name: Prepare and deploy
+    - name: Install Dependencies
+      run: npm install
+      
+    - name: Deploy to gh pages
+      run : |
+        npx angular-cli-ghpages --dir=dist/proyecto-nombre
       env:
+        CI: true
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      run: |
-        npm install
-        # TODO: Add linter
-        # npm run lint
-        ###
-        # Configure Angular first!
-        ####
-        # npm test -- --watch=false --progress=false --browsers=ChromeHeadlessCI
-        # npm run webdriver-update-ci
-        # npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js --webdriver-update=false
-        ####
-        npm run ng -- deploy --base-href=https://daiant.github.io/proyecto-nombre/ --name="Angular Github Pages" --email=cmg2512@gmail.com
+        
