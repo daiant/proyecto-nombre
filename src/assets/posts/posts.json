@@ -1,7 +1,7 @@
 {
   "posts": [
     {
-      "slug": "blog/container-queries",
+      "slug": "/blog/container-queries",
       "title": "Como el CSS moderno te puede salvar la vida",
       "subtitle": "Guía rápida de las container queries",
       "date": "2024-02-26",

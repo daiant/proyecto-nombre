@@ -1,4 +1,4 @@
-<main *ngIf="heading">
+<section *ngIf="heading">
   <header>
     <h1>{{heading.title}}</h1>
     <h2>{{heading.subtitle}}</h2>
@@ -18,7 +18,8 @@
   <footer>
     <h2>Publicado el {{getDate()}}</h2>
     <div class="tags">
-      <p *ngFor="let tag of heading?.tags">#{{tag}}</p>
+      <a *ngFor="let tag of heading?.tags" routerLink="/blog" [queryParams]="{tags: tag}" class="secondary">#{{tag}}</a>
     </div>
+    <a routerLink="/blog">Volver</a>
   </footer>
-</main>
+</section>

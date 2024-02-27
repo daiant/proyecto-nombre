@@ -1,4 +1,4 @@
-main {
+section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--padding);
@@ -52,19 +52,6 @@ article {
     padding-block-start: 0.5em;
   }
 
-  a {
-    color: var(--accent);
-  }
-
-  a[target="_blank"]::after {
-    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
-    margin: 0 3px 0 5px;
-    filter: invert(1);
-  }
-
-  a:active {
-    box-shadow: 0 0 0 1px var(--bg-color), 0 0 0 2px var(--accent);
-  }
 }
 
 p,

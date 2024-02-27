@@ -13,4 +13,5 @@ p {
 a {
   color: unset;
   text-decoration: none;
+  box-shadow: none;
 }

@@ -1,3 +1,13 @@
+header.filters {
+  font-family: var(--body-font);
+  padding-inline: var(--padding);
+
+  a {
+    font-size: var(--text-size-s);
+    cursor: pointer;
+  }
+}
+
 [role="list"] {
   display: flex;
   flex-wrap: wrap;
@@ -12,4 +22,14 @@
 
 [role="listitem"]:first-child {
   flex-basis: 728px;
+}
+
+.no-data {
+  text-align: center;
+  display: block;
+  margin-inline: auto;
+  font-size: var(--text-size-s);
+  font-family: var(--body-font);
+  font-style: italic;
+  padding-block: 4em;
 }

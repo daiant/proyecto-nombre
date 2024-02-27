@@ -42,3 +42,25 @@ body {
 *::after {
   box-sizing: border-box;
 }
+
+a {
+  font-family: var(--body-font);
+}
+
+a:not(.secondary) {
+  color: var(--accent);
+}
+
+a.secondary {
+  color: unset;
+}
+
+a[target="_blank"]::after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  margin: 0 3px 0 5px;
+  filter: invert(1);
+}
+
+a:active {
+  box-shadow: 0 0 0 1px var(--bg-color), 0 0 0 2px var(--accent);
+}

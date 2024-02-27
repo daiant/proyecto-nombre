@@ -1,7 +1,7 @@
 import { NavbarComponent } from '@/components/navbar/navbar.component';
 import { CommonModule } from '@angular/common';
 import { Component, OnDestroy, ViewEncapsulation, inject } from '@angular/core';
-import { ActivatedRoute, NavigationStart, Router, RouterOutlet } from '@angular/router';
+import { ActivatedRoute, NavigationStart, Router, RouterLink, RouterOutlet } from '@angular/router';
 import { ThumbnailComponent } from "../components/blog/thumbnail/thumbnail.component";
 import { MarkdownModule } from 'ngx-markdown';
 import { MarkdownHeading, getMarkdownBody, getMarkdownHeading } from '../lib/markdown.utils';
@@ -11,7 +11,7 @@ import { MarkdownHeading, getMarkdownBody, getMarkdownHeading } from '../lib/mar
   standalone: true,
   templateUrl: './blogpost.component.html',
   styleUrl: './blogpost.component.css',
-  imports: [CommonModule, RouterOutlet, NavbarComponent, ThumbnailComponent, MarkdownModule],
+  imports: [CommonModule, RouterOutlet, NavbarComponent, ThumbnailComponent, MarkdownModule, RouterLink],
   encapsulation: ViewEncapsulation.None
 })
 export class BlogpostComponent {
@@ -41,9 +41,15 @@ export class BlogpostComponent {
     })
     return headings;
   }
+
   getDate(): string {
     return new Intl.DateTimeFormat('es', { dateStyle: 'full' }).format(new Date(this.heading?.date ?? new Date()))
   }
+
+  getTagUrl(tag: string): string {
+    return `/blog?tags=${tag}`;
+  }
+
   handleScrollIntoView(h: HTMLHeadingElement) {
     h.scrollIntoView({ behavior: 'smooth' });
   }
