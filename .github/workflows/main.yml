@@ -21,12 +21,12 @@ jobs:
       run: npm install
       
     - name: Build Angular App
-      run: npm run build
+      run: npm run build:prod
     
     - name: Deploy to gh pages
-      run : |
-        npx angular-cli-ghpages --dir=dist/proyecto-nombre --no-silent
-      env:
-        CI: true
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        
+      if: success()
+      uses: peaceiris/actions-gh-pages@v3
+      with: 
+        github_token: ${{ secrets.GH_TOKEN }}
+        publish_dir: dist/proyecto-nombre
+        enable_jekyll: true
