@@ -1,3 +1,9 @@
+header,
+[role=list] {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
 header.filters {
   font-family: var(--body-font);
   padding-inline: var(--padding);
@@ -11,8 +17,6 @@ header.filters {
 [role="list"] {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
-  margin-inline: auto;
 }
 
 [role="listitem"] {
