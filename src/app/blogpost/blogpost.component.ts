@@ -21,7 +21,6 @@ export class BlogpostComponent {
   loading: boolean = true;
   constructor() {
     const id = this.route.snapshot.params['article'];
-    console.log(this.route.snapshot.params['article']);
     fetch('assets/posts/' + id + '.md')
       .then(response => response.ok ? response.text() : undefined)
       .then(data => this.parseData(data))

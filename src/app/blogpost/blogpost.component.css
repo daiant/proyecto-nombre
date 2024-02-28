@@ -23,6 +23,10 @@ h3 {
   font-size: var(--size-text);
 }
 
+i {
+  opacity: 0.8;
+}
+
 
 header {
   grid-column: 1 / -1;

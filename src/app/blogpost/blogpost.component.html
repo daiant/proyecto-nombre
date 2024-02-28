@@ -1,7 +1,8 @@
-<section *ngIf="heading">
+@defer (when !loading) {
+<section *ngIf="article">
   <header>
-    <h1>{{heading.title}}</h1>
-    <h2>{{heading.subtitle}}</h2>
+    <h1>{{heading?.title}}</h1>
+    <h2>{{heading?.subtitle}}</h2>
     <app-thumbnail [big]="true" [summary]="true"></app-thumbnail>
   </header>
   <article markdown [data]="article">
@@ -23,3 +24,15 @@
     <a routerLink="/blog">Volver</a>
   </footer>
 </section>
+<section *ngIf="!loading && !article">
+  <header>
+    <h1>No se ha encontrado el artículo :(</h1>
+  </header>
+</section>
+} @loading (minimum 600ms) {
+<section>
+  <header>
+    <h1><i>Obteniendo artículo</i></h1>
+  </header>
+</section>
+}
