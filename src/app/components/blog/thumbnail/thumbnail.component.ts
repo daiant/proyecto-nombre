@@ -12,7 +12,7 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 export class ThumbnailComponent {
   @Input() big: boolean = false;
   @Input() summary: boolean = false;
-  @Input() src: string = 'assets/monstera.png';
+  @Input() src: string = 'assets/monstera.webp';
   @Input() title: string = '';
   @Input() subtitle: string = '';
   route = inject(ActivatedRoute);
