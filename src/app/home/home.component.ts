@@ -28,6 +28,7 @@ export class HomeComponent implements OnDestroy {
   constructor() {
     fetch('assets/posts/posts.json').then(response => response.json()).then(data => {
       this.loading = false;
+
       this._posts = data.posts;
       this.searchByTags();
     });

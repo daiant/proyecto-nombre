@@ -3,9 +3,18 @@
   <a routerLink="/blog">Limpiar filtros</a>
 </header>
 <section role="list">
+  @defer (when !loading){
   <app-thumbnail role="listitem" *ngFor="let post of posts; let i = index" [src]="post.img" [big]="i === 0"
     [title]="post.title" [subtitle]="post.subtitle" [url]="post.slug" />
+  } @loading (after 400ms; minimum 1s) {
+  <div class="loading">
+    <p>
+      <i>Buscando artículos</i>
+    </p>
+  </div>
+  }
   <div class="no-data" *ngIf="!loading && posts.length <= 0">
     No se han encontrado resultados
   </div>
+
 </section>
