@@ -104,6 +104,10 @@ nav {
 }
 
 footer {
+  h2 {
+    margin-block-end: 4px;
+  }
+
   grid-column: 2 / 9;
 
   .tags {
@@ -113,7 +117,7 @@ footer {
     margin-block-end: 16px;
   }
 
-  a {
+  >a {
     margin-block-start: 32px;
     display: block;
     width: fit-content;
