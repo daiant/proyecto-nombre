@@ -15,3 +15,7 @@ a {
   text-decoration: none;
   box-shadow: none;
 }
+
+.logo {
+  font-family: 'Signature', sans-serif;
+}

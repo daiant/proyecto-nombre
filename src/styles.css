@@ -2,7 +2,12 @@
 
 @font-face {
   font-family: 'Commit Mono';
-  src: url('./assets/fonts/CommitMono.otf') format("opentype");
+  src: url('./assets/fonts/CommitMono.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Signature';
+  src: url('./assets/fonts/Signature.otf') format('opentype');
 }
 
 body {
