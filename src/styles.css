@@ -10,6 +10,11 @@
   src: url('./assets/fonts/Signature.otf') format('opentype');
 }
 
+html,
+body {
+  margin: 0;
+}
+
 body {
   --padding: 32px;
   --padding-s: 16px;
@@ -25,7 +30,6 @@ body {
   --ease: cubic-bezier(0.8, 0, 1, 1);
   --accent: #0AD591;
 
-  margin: 0;
   color: hsl(0, 0%, 94%);
   --bg-color: hsl(0, 0%, 15%);
   background-color: var(--bg-color);
