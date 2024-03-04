@@ -18,4 +18,20 @@ a {
 
 .logo {
   font-family: 'Signature', sans-serif;
+  position: relative;
+}
+
+.logo::before {
+  content: attr(data-text);
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  width: 0%;
+  color: var(--accent);
+  transition: width 400ms normal;
+  overflow: hidden;
+}
+
+.logo:hover::before {
+  width: 130%;
 }
