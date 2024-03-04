@@ -13,5 +13,4 @@ import { FooterComponent } from "./components/footer/footer.component";
   imports: [CommonModule, RouterOutlet, NavbarComponent, ThumbnailComponent, FooterComponent]
 })
 export class AppComponent {
-  title = 'proyecto-nombre';
 }
