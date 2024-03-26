@@ -2,7 +2,7 @@
 title: Como el CSS moderno te puede salvar la vida;
 subtitle: Guía rápida de las container queries;
 date: 2024-02-26;
-img: /assets/monstera.webp;
+img: assets/monstera.webp;
 tags: css;
 ---
 Desde hace un tiempo llevo queriendo investigar acerca de las *container queries*. Y no es para menos: es una mejora que se ha estado pidiendo desde hace varios años. Ahora que finalmente se acepta en <a href="https://caniuse.com/css-container-queries" target="_blank">la mayoría de dispositivos</a>, vamos a explicar brevemente su funcionamiento, cómo te puede servir y cómo me ha servido a mí
