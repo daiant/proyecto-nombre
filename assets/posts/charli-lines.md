@@ -2,12 +2,12 @@
 title: Larga vida a los filtros de instagram;
 subtitle: Tratamiento de imágenes en Javascript Canvas;
 date: 2024-03-25;
-img: /assets/posts/images/charli-lines.png;
+img: assets/posts/images/charli-lines.png;
 tags: js,canvas;
 ---
 Buscando un poco de inspiración me encontré con un <a href="https://www.figma.com/community/plugin/1333908306878255000/ruri-lines" target="_blank">plugin chulísimo para figma</a>, que hace maravillas con líneas y logos y de todo. En mi inspiradora confianza, me dije a mí mismo:  Esto, tan difícil no tiene que ser. Y aquí estamos.
 
-<img src="/assets/posts/lines/1691081997342.webp" />
+<img src="assets/posts/lines/1691081997342.webp" />
 
 ## Cómo funciona
 
@@ -17,7 +17,7 @@ En una página nueva, subes una fotos, te pones a leer los píxeles de la imagen
 
 Por ejemplo, para la imagen de este mismo post, tendríamos la siguiente generación:
 
-<img src="/assets/posts/lines/demo.png" />
+<img src="assets/posts/lines/demo.png" />
 
 Me gusta la idea de tener un control algo más amplio en la generación de líneas: grosor, colores, intensidad... Así se puede probar con fotos reales, no solo con iconos, letras y degradados, que era la idea original. 
 

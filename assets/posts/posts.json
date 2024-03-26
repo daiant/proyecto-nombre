@@ -15,7 +15,7 @@
       "title": "Larga vida a los filtros de instagram",
       "subtitle": "Tratamiento de imágenes en Javascript Canvas",
       "date": "2024-03-25",
-      "img": "/assets/posts/images/charli-lines.png",
+      "img": "assets/posts/images/charli-lines.png",
       "tags": [
         "js",
         "canvas"
