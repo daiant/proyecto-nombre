@@ -24,7 +24,7 @@ export class BlogpostComponent {
     fetch('assets/posts/' + id + '.md')
       .then(response => response.ok ? response.text() : undefined)
       .then(data => this.parseData(data))
-    // .catch(error => { console.warn(error); this.loading = false });
+      .catch(error => { console.warn(error); this.loading = false });
   }
   parseData(data: string | undefined): void {
     if (!data) { this.loading = false; return; };

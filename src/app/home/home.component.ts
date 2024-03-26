@@ -29,7 +29,7 @@ export class HomeComponent implements OnDestroy {
     fetch('assets/posts/posts.json').then(response => response.json()).then(data => {
       this.loading = false;
 
-      this._posts = data.posts;
+      this._posts = data.posts.reverse();
       this.searchByTags();
     });
   }

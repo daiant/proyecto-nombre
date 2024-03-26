@@ -72,6 +72,7 @@ img {
   transition: transform 2s normal;
   transform-origin: bottom left;
   opacity: 0.8;
+  pointer-events: none;
 }
 
 @container article (max-width: 728px) {

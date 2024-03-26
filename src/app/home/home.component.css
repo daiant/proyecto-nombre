@@ -22,6 +22,7 @@ header.filters {
 [role="list"] {
   display: flex;
   flex-wrap: wrap;
+  gap: 8px;
 }
 
 [role="listitem"] {
