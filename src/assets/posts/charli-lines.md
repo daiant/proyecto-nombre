@@ -16,9 +16,11 @@ Para poder implementarlo sobre la web, la solución más sencilla es utilizar el
 En una página nueva, subes una fotos, te pones a leer los píxeles de la imagen, el color en rgb de cada píxel y procesar las líneas en base a la intensidad (0-255) de ese color. 
 
 Por ejemplo, para la imagen de este mismo post, tendríamos la siguiente generación:
+
 <img src="assets/posts/lines/demo.png" />
 
 O esta bella imagen de una bella persona:
+
 <img src="assets/posts/lines/demo_1.png" />
 
 Me gusta la idea de tener un control algo más amplio en la generación de líneas: grosor, colores, intensidad... Así se puede probar con fotos reales, no solo con iconos, letras y degradados, que era la idea original. 
