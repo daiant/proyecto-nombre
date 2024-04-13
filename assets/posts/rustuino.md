@@ -1,8 +1,8 @@
 ---
-title: hola;
-subtitle: Compilando código de Rust en Arduino;
+title: ¿Será cosa del destino?;
+subtitle: Programando en Rust para Arduino;
 date: 2024-03-25;
-img: assets/posts/images/charli-lines.png;
+img: assets/posts/images/rustuino.webp;
 tags: arduino,rust,softare embebido;
 ---
 ¡Bienvenidos al mundo de los sistemas empotrados! 
@@ -128,7 +128,7 @@ cargo run
 ```
 <video src="assets/posts/images/rustuino.mp4" controls></video>
 
-¡Funciona! Ya tenemos un trasto más en el escritorio, pero que hace lucecitas.
+¡Funciona! Ya tenemos un trasto más en el escritorio, pero este hace lucecitas.
 
 ## Próximos pasos
 Se conoce que es un ejemplo basiquito, únicamente para demostrar que se puede hacer. Si te ha entrado la vena y quieres indagar más, te dejo un <a target="_blank" href="https://github.com/Rahix/avr-hal/tree/main/examples">repositorio</a> con muchos ejemplos de aplicaciones escritas en Rust para microcontroladores, y el <a target="_blank" href="https://github.com/rust-embedded">proyecto oficial</a> de Rust Embedded. 

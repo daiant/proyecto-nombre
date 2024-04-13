@@ -23,10 +23,10 @@
     },
     {
       "slug": "/blog/rustuino",
-      "title": "Ns",
-      "subtitle": "Compilando código de Rust en Arduino",
+      "title": "¿Será cosa del destino?",
+      "subtitle": "Programando en Rust para Arduino",
       "date": "2024-04-13",
-      "img": "assets/posts/images/charli-lines.png",
+      "img": "assets/posts/images/rustuino.webp",
       "tags": [
         "arduino",
         "rust",
