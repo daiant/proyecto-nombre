@@ -52,6 +52,7 @@ header {
 
   app-thumbnail {
     grid-column: 2 / 9;
+    width: 100%;
   }
 }
 
