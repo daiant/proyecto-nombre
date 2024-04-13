@@ -20,6 +20,18 @@
         "js",
         "canvas"
       ]
+    },
+    {
+      "slug": "/blog/rustuino",
+      "title": "Ns",
+      "subtitle": "Compilando código de Rust en Arduino",
+      "date": "2024-04-13",
+      "img": "assets/posts/images/charli-lines.png",
+      "tags": [
+        "arduino",
+        "rust",
+        "softare embebido"
+      ]
     }
   ]
 }
