@@ -49,7 +49,7 @@ void loop() {
 Si cargamos el código en nuestro bicho, el led verde estará encendido siempre hasta que se pulse un botón, que hará que parpadeen las luces rojas hasta que se suelte.
 
 ## Muy bien, ahora en Rust
-El proceso en Rust es un poco más laborioso que si únicamente utilizáramos el IDE de Arduino pero, como todo lo que merece en esta vida cuesta, a ello que vamos. 
+El proceso en Rust es un poco más laborioso que si únicamente utilizáramos el IDE de Arduino, pero como todo lo que merece en esta vida cuesta, a ello que vamos. 
 
 Primero que todo, si aún no lo has hecho, instala `cargo` <a target="_blank" href="https://rustup.rs">(https://rustup.rs)</a>
 
