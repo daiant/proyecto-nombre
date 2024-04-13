@@ -6,6 +6,7 @@
   cursor: default;
   container: article / inline-size;
   box-shadow: none;
+  height: 100%;
 
   &:not(.summary):hover {
     cursor: pointer;
@@ -27,7 +28,6 @@
 }
 
 [role="contentinfo"] {
-  aspect-ratio: 728 / 300;
   border: 2px solid;
   border-radius: var(--border-radius);
   padding: var(--padding-s);
