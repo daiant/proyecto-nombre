@@ -5,6 +5,7 @@ import { ActivatedRoute, NavigationStart, Router, RouterLink, RouterOutlet } fro
 import { ThumbnailComponent } from "../components/blog/thumbnail/thumbnail.component";
 import { MarkdownModule } from 'ngx-markdown';
 import { MarkdownHeading, getMarkdownBody, getMarkdownHeading } from '../lib/markdown.utils';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-blogpost',
@@ -19,6 +20,9 @@ export class BlogpostComponent {
   heading: MarkdownHeading | undefined;
   article: string | undefined;
   loading: boolean = true;
+  title = inject(Title)
+  meta = inject(Meta);
+
   constructor() {
     const id = this.route.snapshot.params['article'];
     fetch('assets/posts/' + id + '.md')
@@ -31,6 +35,15 @@ export class BlogpostComponent {
     this.heading = getMarkdownHeading(data);
     this.article = getMarkdownBody(data);
     this.loading = false;
+    this.setMeta(this.heading);
+  }
+
+  setMeta(heading: MarkdownHeading | undefined): void {
+    if (!heading) return;
+    this.title.setTitle(heading.subtitle + ' | Bloguesillo de Daiant');
+    this.meta.removeTag('property="og:image"');
+    console.log(this.meta.addTag({ property: 'og:image', content: 'https://daiant.github.io/proyecto-nombre/' + heading.img }));
+
   }
 
   getHeadings(): HTMLHeadingElement[] {
