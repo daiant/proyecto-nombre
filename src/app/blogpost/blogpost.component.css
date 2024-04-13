@@ -15,10 +15,6 @@ h4 {
   font-family: var(--body-font);
 }
 
-h2 {
-  font-size: var(--size-h1);
-}
-
 h1,
 h3 {
   font-size: var(--size-text);
@@ -49,12 +45,14 @@ header {
 
   h2 {
     margin-block: 0 1.5em;
+    font-size: var(--size-h3);
   }
+}
 
-  app-thumbnail {
-    grid-column: 2 / 9;
-    width: 100%;
-  }
+app-thumbnail {
+  grid-column: 2 / 9;
+  width: 100%;
+}
 }
 
 article {
