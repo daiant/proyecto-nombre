@@ -1,7 +1,7 @@
 ---
 title: ¿Será cosa del destino?;
 subtitle: Programando en Rust para Arduino;
-date: 2024-03-25;
+date: 2024-04-13;
 img: assets/posts/images/rustuino.webp;
 tags: arduino,rust,softare embebido;
 ---
@@ -72,7 +72,7 @@ cargo generate --git https://github.com/Rahix/avr-hal-template.git
 
 Y ahora sí, ya podemos programar. El código de antes transpilado: 
 ```rust
- #![no_std]
+#![no_std]
 #![no_main]
 
 use panic_halt as _;
