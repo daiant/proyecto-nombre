@@ -53,17 +53,13 @@ app-thumbnail {
   grid-column: 2 / 9;
   width: 100%;
 }
-}
 
 article {
   grid-column: 2 / 9;
-
-
-  h2 {
-    margin-block: 1em 1.5em;
-    padding-block-start: 0.5em;
-  }
-
+}
+article h2 {
+  margin-block: 1em 1.5em;
+  padding-block-start: 0.5em;
 }
 
 p,
